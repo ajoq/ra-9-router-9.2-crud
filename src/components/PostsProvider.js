@@ -9,7 +9,11 @@ export default function PostsProvider(props) {
 
     const loadData = () => {
         setLoading(true);
-        fetch(process.env.REACT_APP_POSTS_URL)
+        fetch(process.env.REACT_APP_POSTS_URL, {
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8',
+            },
+        })
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(
