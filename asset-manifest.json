@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ra-9-router-9.2-crud/static/css/main.c2cab247.css",
+    "main.js": "/ra-9-router-9.2-crud/static/js/main.b14f239f.js",
+    "index.html": "/ra-9-router-9.2-crud/index.html",
+    "main.c2cab247.css.map": "/ra-9-router-9.2-crud/static/css/main.c2cab247.css.map",
+    "main.b14f239f.js.map": "/ra-9-router-9.2-crud/static/js/main.b14f239f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.b14f239f.js"
+  ]
+}
