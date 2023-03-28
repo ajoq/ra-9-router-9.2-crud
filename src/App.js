@@ -12,9 +12,13 @@ function App() {
             <Container className="mt-4">
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/" element={<MainPage />} />
-                        <Route path="/posts/new/" element={<AddPost />} />
-                        <Route path="/posts/:postId" element={<PostDetail />} />
+                        <Route exact path="/" element={<MainPage />} />
+                        <Route exact path="/posts/new/" element={<AddPost />} />
+                        <Route
+                            exact
+                            path="/posts/:postId"
+                            element={<PostDetail />}
+                        />
                     </Routes>
                 </BrowserRouter>
             </Container>
