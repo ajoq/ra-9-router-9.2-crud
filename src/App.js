@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import PostsProvider from './components/PostsProvider';
@@ -10,17 +10,13 @@ function App() {
     return (
         <PostsProvider>
             <Container className="mt-4">
-                <BrowserRouter>
+                <HashRouter>
                     <Routes>
-                        <Route exact path="/" element={<MainPage />} />
-                        <Route exact path="/posts/new/" element={<AddPost />} />
-                        <Route
-                            exact
-                            path="/posts/:postId"
-                            element={<PostDetail />}
-                        />
+                        <Route path="/" element={<MainPage />} />
+                        <Route path="/posts/new/" element={<AddPost />} />
+                        <Route path="/posts/:postId" element={<PostDetail />} />
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </Container>
         </PostsProvider>
     );
